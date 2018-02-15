@@ -12,6 +12,7 @@ map <C-t> :NERDTreeToggle<CR>
 set relativenumber
 set number
 set numberwidth=2
+set backspace=indent,eol,start
 
 " Relative line toggler 
 function! NumberToggle()
@@ -24,4 +25,3 @@ endfunction
 
 " Use (control + n) to toggle line numbers
 nnoremap <C-n> :call NumberToggle()<CR>
-
