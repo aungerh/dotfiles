@@ -2,12 +2,11 @@
 .
 ├── README.md
 ├── profiles
-│   └── alextalon
-│       └── profile
+│   └── .profile
 ├── vim
-│   └── vimrc
+│   └── .vimrc
 └── zsh
-    └── zshrc
+    └── .zshrc
 ```
 
 # Chrome extensions I'm currently using:
