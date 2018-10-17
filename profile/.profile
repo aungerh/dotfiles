@@ -12,18 +12,21 @@ export PATH="$HOME/go/bin:$PATH"
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 export PATH=${JAVA_HOME}/bin:$PATH
 export PATH=~/.npm-global/bin:$PATH
+export ERL_AFLAGS="-kernel shell_history enabled"
 
 alias talon="cd ~/go/src/github.com/talon-one/talon-service"
-alias kubeprod='kubectl --context=prod'
+alias code='cd ~/code'
+alias gopen='git-open' # requires `npm install --global git-open` from https://github.com/paulirish/git-open
+
+alias kubeprod='kubectl --context=gke_talon-one-production_europe-west1-d_talon-production-belgium'
+alias kubefarm='kubectl --context=gke_talon-farm2_europe-west1-d_farm2-cluster'
+alias gs='gss'
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/alextalon/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/alextalon/google-cloud-sdk/path.zsh.inc'; fi
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/alextalon/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/alextalon/google-cloud-sdk/completion.zsh.inc'; fi
 
 if command -v brew >/dev/null 2>&1; then
-  # Load rupa's z if installed
-  [ -f $(brew --prefix)/etc/profile.d/z.sh ] && source $(brew --prefix)/etc/profile.d/z.sh
+  [ -f $(brew --prefix)/etc/profile.d/z.sh ] && source $(brew --prefix)/etc/profile.d/z.sh # Load rupa's z if installed
 fi
 
 eval "$(rbenv init -)"
