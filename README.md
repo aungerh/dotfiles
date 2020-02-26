@@ -1,14 +1,4 @@
-```
-.
-├── README.md
-├── profiles
-│   └── .profile
-├── vim
-│   └── .vimrc
-└── zsh
-    └── .zshrc
-```
+## Dependencies
 
-# Chrome extensions I'm currently using:
-
-[Vimium](https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb?hl=en)
+- [NERDTree](https://github.com/preservim/nerdtree)
+- [pathogen.vim](https://github.com/tpope/vim-pathogen)
